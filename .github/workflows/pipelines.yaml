@@ -1,11 +1,11 @@
-name: CI Pipeline
-on:
+name: CI Pipeline #the recipe
+on:  #When to start cooking (trigger)
   push:
     branches: [main]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps: 
+jobs:   #The main dishes to prepare
+  build: #One dish called "build"
+    runs-on: ubuntu-latest  #Use a Linux kitchen
+    steps: #The cooking instructions
       - name: Checkout code
         uses: actions/checkout@v5
 
